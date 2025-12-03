@@ -74,20 +74,20 @@ body > div:nth-of-type(1) {
       rgba(0, 0, 0, 0) 80%,
       rgba(255, 255, 255, 1) 100%
     ),
-    url("images/plein-jeu.webp");
-
+    url("../images/plein-jeu.webp");
+  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-};
+}; 
 
-body > div:nth-of-type(2) {
+ body > div:nth-of-type(2) {
   background:
     linear-gradient(to top,
       rgba(0, 0, 0, 0) 100%,
       rgba(255, 255, 255, 1) 80%
     ),
-    url("../images/bibliotheque\ de\ jeu.avif");
+    url("../images/bibliotheque de jeu.avif");
 
   background-size: cover;
   background-position: center;
