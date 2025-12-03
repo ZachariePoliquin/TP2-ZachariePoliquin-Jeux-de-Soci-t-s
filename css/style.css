@@ -87,7 +87,7 @@ body > div:nth-of-type(1) {
       rgba(0, 0, 0, 0) 100%,
       rgba(255, 255, 255, 1) 80%
     ),
-    url("../images/bibliotheque de jeu.avif");
+    url("../images/bibliotheque\ de\ jeu.avif");
 
   background-size: cover;
   background-position: center;
