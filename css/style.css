@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  font-family: "Chelsea Market", cursive;
+}
+
+html {}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section,
+header,
+footer {
+  min-height: 100vh;
+}
+
+.centre {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #ffffffa9;
+  padding: 30px 20px;
+}
+
+/* 
+.un__centre{
+    background-color: aquamarine;
+}
+
+.deux__centre{
+    background-color: rgb(195, 255, 127);
+}
+
+.trois__centre{
+    background-color: rgb(255, 131, 127);
+}
+
+.quatre__centre{
+    background-color: rgb(251, 127, 255);
+}
+
+.cinq__centre{
+    background-color: rgb(127, 197, 255);
+}
+
+.six__centre{
+    background-color: rgb(153, 255, 127);
+} */
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+}
+
+/*///////////////////////////////////////// Section de la Page */
+body>div:nth-of-type(3) {
+  background-color: rgb(255, 187, 0);
+}
+
+body>div:nth-of-type(4) {
+  background-color: rgb(242, 0, 255);
+}
+
+body>div:nth-of-type(5) {
+  background-color: rgb(178, 32, 32);
+}
+
+body>div:nth-of-type(6) {
+  background-color: rgb(123, 0, 255);
+}
+
+body>div:nth-of-type(7) {
+  background-color: rgba(137, 106, 68, 0.879);
+}
+
+/*///////////////////////////////////////// La division Hero */
+
+.hero {}
+
+.hero>.centre {
+  background-color: #5c5ce100;
+}
+
+.hero__titre {
+  color: #313131;
+  font-size: 4rem;
+}
+
+.hero__soustitre {
+  color: #313131;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.hero__description {
+  font-family: "Chelsea Market", cursive;
+}
+
+/*///////////////////////////////////////// CHECK-BURGER */
+
+.navigation {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.navigation__menu {
+  transform: translateX(110%);
+  transition: transform 0.5s linear;
+  background-color: rgba(111, 93, 63, 0.365);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navigation__menu a {
+  display: block;
+  text-decoration: none;
+  background-color: rgba(151, 114, 89, 0.505);
+  padding: 4px;
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.navigation__menu a:hover {
+  color: rgb(112, 48, 48);
+  transform: scale(1.1);
+}
+
+#chk-burger:checked~.navigation__menu {
+  transform: translateX(0%);
+}
+
+#chk-burger {
+  display: none;
+}
+
+/*///////////////////////////////////////// Titre et fond */
+
+/* ////////////////////////////////////////////INscription */
+
+fieldset {
+  border-radius: 10px;
+}
+
+.formulaire__label {
+  font-family: "Chelsea Market", cursive;
+}
+
+/* ////////////////////////////////////////////Tableau */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgb(245, 248, 90);
+  margin: 30px auto;
+}
+
+/* .titre__th {
+  background-color: rgb(204, 190, 121);
+} */
+
+.titre__tr {
+  background-color: rgb(224, 204, 101);
+}
+
+label {
+  padding-left: 30px;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgb(218, 196, 77);
+}
+
+td,
+th {
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 2rem;
+  padding: 5px;
+}
+
+caption {
+  font-size: 3rem;
+  padding: 7px;
+  border: 1px solid orange;
+  background-color: rgb(227, 183, 40);
+  border-right: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
+/* ////////////////////////////////////////////Pied de Page */
+
+.pied__1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pied__figure {
+  margin: 0;
+}
+
+.pied__figure img {
+  display: block;
+  width: 100%;
+}
+
+.pied__section {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 200px;
+  color: rgb(120, 120, 120);
+  padding: 20px;
+  margin-left: -13px;
+  min-height: 20vh;
+}
+
+figcaption {
+  text-align: center;
+}
+
+h4 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.h4__image {
+  margin-bottom: 18px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2.4rem;
+  color: #313131;
+}
+
+li {
+  font-size: 1.2rem;
+}
+
+.a__Flexbox {
+  color: rgb(229, 229, 101);
+  text-decoration: none;
+}
+
+.pied__2 {
+  display: flex;
+}
+
+.svgbox__icones__principal {
+  display: flex;
+  padding: 10px;
+  min-height: 20vh;
+}
+
+.svgbox__icones {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+}

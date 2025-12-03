@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zacharie-Poliquin_TP2</title>
+    <link rel="stylesheet" href="css/recherche.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="hero">
+      <div class="barre__sup">
+        <nav class="hero__menu">
+          <img
+            class="img__logo"
+            src="images/jeu__de__société.png"
+            alt="logo"
+            width="80px"
+          />
+          <img
+            class="img__titre"
+            src="images/Jeu_societe_titre.png"
+            alt="logo"
+            height="120px"
+          />
+          <form class="recherche">
+          <input
+            class="recherche__input"
+            type="search"
+            placeholder="Rechercher"
+          />
+          <img
+            src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=fff"
+            alt="image search"
+            class="recherche__img"
+            width="20"
+            height="20"
+          />
+        </form>
+      
+      </div>
+      <div class="navigation">
+        <label for="chk-burger" class="navigation__bouton">
+          <img
+            src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=fff"
+            width="64"
+            height="64"
+          />
+        </label>
+        <input type="checkbox" id="chk-burger" />
+        <nav class="navigation__menu">
+          <a href="#accueil">Accueil</a>
+          <a href="#inscription">Inscription</a>
+          <a href="#tableau">Tableau</a>
+          <a href="#nouvelles">Nouvelles</a>
+          <a href="#galerie">Galerie</a>
+          <a href="#video">Vidéo</a>
+          <a href="#pied">Coordonnées</a>
+        </nav>
+      </div>
+
+      <header id="accueil" class="accueil centre">
+        <h1 class="hero__titre">Des Jeux de Sociétés</h1>
+        <h2 class="hero__soustitre">(Par Zacharie Poliquin)</h2>
+        <h3 class="hero_description"> Ce site web, consacré au jeu de Sociétés, vous en apprendra plus sur de nouveaux jeux de société (Inspirés par d'autres) qui pourraient un jour changé la facette du monde comme Monopoly. </h3>
+      </header>
+    </div>
+    <div>
+      <section class="deux centre" id="inscription">
+        <h2>Inscription sur le site</h2>
+         <form class="formulaire">
+        <div class="formulaire__div">
+      <fieldset>
+        <label class="formulaire__label" for="txt-nom">Prénom</label>
+        <input
+          class="formulaire__label"
+          id="txt-nom"
+          type="text"
+          placeholder="Entrez votre nom :"
+        />
+      </fieldset>
+      <fieldset>
+        <label class="formulaire__label" for="txt-prenom">Nom de famille</label>
+        <input
+          class="formulaire__label"
+          id="txt-prenom"
+          type="text"
+          placeholder="Entrez votre prénom :"
+        />
+      </fieldset>
+      <fieldset>
+        <label class="formulaire__label" for="txt-courriel">Courriel</label>
+        <input
+          class="formulaire__label"
+          id="txt-courriel"
+          type="email"
+          placeholder="Entrez votre courriel :"
+        />
+      </fieldset>
+        <fieldset>
+        <label class="formulaire__label" for="txt-courriel">Numéro de téléphone</label>
+        <input
+          class="formulaire__label"
+          id="txt-courriel"
+          type="email"
+          placeholder="Entrez votre numéro de téléphone :"
+        />
+      </fieldset>
+
+      <fieldset>
+        <label class="formulaire__label" for="txt-courriel">Mot de Passe</label>
+        <input
+          class="formulaire__label"
+          id="txt-courriel"
+          type="email"
+          placeholder="Entrez votre mot de Passe :"
+        />
+      </fieldset>
+
+      <fieldset>
+        <label class="formulaire__label" for="txt-courriel">Confirmation du Mot de Passe</label>
+        <input
+          class="formulaire__label"
+          id="txt-courriel"
+          type="email"
+          placeholder="Confirmez votre mot de Passe :"
+        />
+      </fieldset>
+
+      <fieldset>
+        <label class="formulaire__label" for="txt-courriel">Votre Jeu de Société préféré</label>
+        <input
+          class="formulaire__label"
+          id="txt-courriel"
+          type="email"
+          placeholder="Votre jeu de société préféré :"
+        />
+      </fieldset>
+      </div>
+
+      <fieldset>
+     <legend class="formulaire__label">Âge</legend>
+     <label class="formulaire__label">Étudiant (10$)<input type="radio" name="rad-abonnement"></label>
+     <label class="formulaire__label">Adulte (25$)<input type="radio" name="rad-abonnement"></label>
+     <label class="formulaire__label">Senior (15$)<input type="radio" name="rad-abonnement"></label>
+     </fieldset>
+
+     <fieldset>
+     <legend class="formulaire__label">Quel est votre intérêt pour les Jeux de Société</legend>
+     <label class="formulaire__label">Aucun<input type="radio" name="rad-abonnement"></label>
+     <label class="formulaire__label">Peu<input type="radio" name="rad-abonnement"></label>
+     <label class="formulaire__label">Moyen<input type="radio" name="rad-abonnement"></label>
+     <label class="formulaire__label">Beaucoup<input type="radio" name="rad-abonnement"></label>
+     <label class="formulaire__label">Énorme<input type="radio" name="rad-abonnement"></label>
+     </fieldset>
+
+     <input class="formulaire__label" type="submit">
+
+    </form>
+      </section>
+    </div>
+
+    <div>
+      <section class="trois centre" id="tableau"><h2>Tableau</h2>
+       <table>
+            <caption>Mes Jeux de Sociétés</caption>
+            <thead>
+              <tr class="titre__tr">
+                  <th>Nom</th>
+                  <th>Date de Sortie</th>
+                  <th>Nb de joueurs</th>
+                  <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <th class="titre__th">Game Over</th>
+                  <th>5</th>
+                  <th>2-4 joueurs</th>
+                  <th>6</th>
+              </tr>
+                <tr>
+                  <th class="titre__th">Ta Destinée</th>
+                  <th>5</th>
+                  <th>2-6 joueurs</th>
+                  <th>6</th>
+              </tr>
+                <tr>
+                  <th class="titre__th">Monopoli</th>
+                    <th>5</th>
+                  <th>2-6 joueurs</th>
+                  <th>6</th>
+              </tr>
+                <tr>
+                  <th class="titre__th">Listopolis</th>
+                  <th>Décembre 2024</th>
+                  <th>2-6 joueurs</th>
+                  <th>6</th>
+              </tr>
+           </tbody>
+
+        </table>
+      </section>
+    </div>
+
+    <div>
+      <section class="quatre centre" id="nouvelles"><h2>Nouvelles</h2></section>
+    </div>
+
+    <div>
+      <section class="cinq centre" id="galerie">
+        <h2>Galerie d'images</h2>
+      </section>
+    </div>
+
+    <div>
+      <section class="six centre" id="video"><h2>Vidéo</h2></section>
+    </div>
+
+    <div>
+      <footer id="pied" class="pied centre">
+        <h2>Coordonées et Adresse</h2>
+         <div class = "bas">
+            <div class = "pied__1">
+               <section class = "pied__section">
+                 <h4>Adresse Collège de Maisonneuve</h4>
+                 <h5>
+                    <ul>
+                        <li> Ouvert depuis les 18 mars 2025 </li>
+                        <li> 67 R. Des Jeux, Montréal, QC H7O 2L0 </li>
+                        <li> Téléphone : 514-123-4567 </li>
+                        <li> Nombre d'employés : 70 </li>
+                    </ul>
+                 </h5>
+               </section>
+
+               <section class = "pied__section">
+                 <h4>Services administratif</h4>
+                 <h5>
+                    <ul>
+                        <li> Accueil et information </li>
+                        <li> Inscription et admission </li>
+                        <li> Nourritures </li>
+                        <li> Location de Jeux </li>
+                        <li> Party et Fête </li>
+                        <li> Bar</li>
+                        <li> Évenements </li>
+                    </ul>
+                 </h5>
+               </section>
+
+               <section class = "pied__section">
+                 <h4 class="h4__image">Des Jeux de Sociétés</h4>
+                 <figure class="pied__figure">
+                    <img src="images/qg__jeu__de__societe.jpg" alt="jardin maisonneuve"> 
+                    <figcaption> <h5> QG du batiment prinicpal de notre entreprise </h5> </figcaption>
+                 </figure>
+                
+               </section>
+            </div>
+
+            <div class="pied__2">
+               <section class="svgbox__icones__principal">
+                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=github&color=000" alt="github" width="24px" height="24px">
+                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=facebook&color=0000DA" alt="facebook" width="24px" height="24px">
+                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=FF0E00" alt="stackoverflow" width="24px" height="24px">
+                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0095BD" alt="linkedin" width="24px" height="24px">
+                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=messenger&color=0000DA" alt="messenger" width="24px" height="24px">
+                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=discord&color=4F00A0" alt="discord" width="24px" height="24px">
+               </section>
+            </div>
+         </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<!-- body div {
+    backround-color : red;
+}
+body > div {
+    background-color : red;
+}
+
+<body>
+  <div>
+    <div>
+      <div></div>
+    </div>
+  </div>
+</body> -->
