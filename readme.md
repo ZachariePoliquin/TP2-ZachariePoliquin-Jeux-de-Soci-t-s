@@ -4,4 +4,4 @@ Ce site web, consacré au jeu de Sociétés, vous en apprendra plus sur de nouve
 
 - Auteur: Zacharie Poliquin
 - Cours: 1W1-Mise en Page Web
-- Github-page:
+- Github-page: https://zachariepoliquin.github.io/TP2-ZachariePoliquin-Jeux-de-Soci-t-s/
