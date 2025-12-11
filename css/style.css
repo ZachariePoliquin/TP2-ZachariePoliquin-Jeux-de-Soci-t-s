@@ -66,7 +66,7 @@ h2 {
   font-family: "Indie Flower", cursive;
 }
 
-/*///////////////////////////////////////// Section de la Page */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// Section de la Page */
 
 body > div:nth-of-type(1) {
   background: 
@@ -79,27 +79,28 @@ body > div:nth-of-type(1) {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}; 
+}
 
- body > div:nth-of-type(2) {
-  background:
+body > div:nth-of-type(2){
+background:
     linear-gradient(to top,
-      rgba(0, 0, 0, 0) 100%,
-      rgba(255, 255, 255, 1) 80%
+      rgba(0, 0, 0, 0) 80%,
+      rgb(255, 255, 255) 100%
     ),
-    url("../images/bibliotheque\ de\ jeu.avif");
+    url("../images/bibliotheque-de-jeu.avif");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
 }
 
 body>div:nth-of-type(3) {
-  background-color: rgb(255, 187, 0);
+  background-color: rgb(179, 155, 37);
 }
 
 body>div:nth-of-type(4) {
-  background-color: rgb(242, 0, 255);
+  background-color: rgb(89, 80, 216);
 }
 
 body>div:nth-of-type(5) {
@@ -114,9 +115,20 @@ body>div:nth-of-type(7) {
   background-color: rgba(137, 106, 68, 0.879);
 }
 
-/*///////////////////////////////////////// La division Hero */
+img {
 
-.hero {}
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////// La division Hero */
+
+.hero {
+
+}
 
 .hero>.centre {
   background-color: #5c5ce100;
@@ -137,7 +149,7 @@ body>div:nth-of-type(7) {
   font-family: "Chelsea Market", cursive;
 }
 
-/*///////////////////////////////////////// CHECK-BURGER */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////// CHECK-BURGER */
 
 .navigation {
   position: fixed;
@@ -179,9 +191,13 @@ body>div:nth-of-type(7) {
   display: none;
 }
 
-/*///////////////////////////////////////// Titre et fond */
+/*////////////////////////////////////////////////////////////////////////////////////////////////// Titre et fond */
 
-/* ////////////////////////////////////////////INscription */
+/* hi {
+  font-size: clamp(1rem,8vw,5rem);
+} */
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////Inscription */
 
 fieldset {
   border-radius: 10px;
@@ -191,7 +207,7 @@ fieldset {
   font-family: "Chelsea Market", cursive;
 }
 
-/* ////////////////////////////////////////////Tableau */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////Tableau */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -232,7 +248,141 @@ caption {
   border-top: 2px solid rgb(0, 0, 0);
 }
 
-/* ////////////////////////////////////////////Pied de Page */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////Article1 */
+
+/*
+.centre_total {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.centre_flexbox {
+display: flex;
+ flex-grow: 1;
+ flex-shrink: 0;
+ flex-basis: 200px;
+ flex-wrap: wrap;
+}
+
+
+.principal__figure img {
+   display: block;
+   width: 100%;
+}
+
+h2 {
+   margin-bottom: 35px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 1.9rem;
+   color: rgb(13, 90, 120);
+}
+
+p {
+  line-height: 25px;
+  margin-bottom: 35px;
+}
+
+figcaption {
+   background-color: rgba(255, 255, 255, 0.537);
+   text-align: center;
+   padding: 5px;
+   font-style: italic;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* /////////////////////Conteneur Principal */
+.article {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  background-color: rgb(169, 146, 207);
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+/* ///////////////////// Element de conteneur de la premiere colonne */
+.article__div {
+flex-grow: 2 ;
+flex-shrink: 0;
+flex-basis: 400px;
+font-size: 2rem;
+
+}
+
+/* /////////////////////Element de conteneur de la premiere colonneElement de conteneur de la premiere colonne */
+.article__figure {
+flex-grow: 1 ;
+flex-shrink: 0;
+flex-basis: 400px;
+
+}
+
+
+
+
+.article__div h2 {
+
+}
+
+.article__div p {
+
+}
+
+.article__img {
+  display: block;
+    width: 100%;
+}
+
+.article__figcaption {
+  background-color: rgb(137, 89, 45);
+  padding: 10px;
+} 
+
+.article:nth-of-type(odd)  .article__figure {
+order: -1;
+} 
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Galerie */
+.galerie{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.galerie__figure {
+   flex-grow: 0 ;
+   flex-shrink: 0 ;
+   flex-basis: 300px;
+   transform: rotate(10deg);
+}
+
+.galerie__img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.galerie__figaption {
+
+}
+
+.galerie__figure:nth-of-type(odd){
+  transform: rotate(-10deg);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Video */
+
+.video iframe {
+  display: inline-block;
+  margin: 20px;
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Pied de Page */
 
 .pied__1 {
   display: flex;
