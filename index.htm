@@ -14,9 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&display=swap" rel="stylesheet">
 
 
-
-    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Hero et Barre Supérieur -->
-  </head>
+    </head>
   <body>
     <div class="hero">
       <div class="barre__sup">
@@ -24,33 +22,33 @@
             class="img__logo"
             src="images/jeu__de__société.png"
             alt="logo"
-            width="80px"
+            width="80"
           />
           <img
             class="img__titre"
             src="images/Jeu_societe_titre.png"
             alt="logo"
-            height="120px"
+            height="120"
           />
           <form class="recherche">
-          <input
-            class="recherche__input"
-            type="search"
-            placeholder="Rechercher"
-          />
-          <img
-            src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=fff"
-            alt="image search"
-            class="recherche__img"
-            width="20"
-            height="20"
-          />
-        </form>
-
+            <input
+              class="recherche__input"
+              type="search"
+              placeholder="Rechercher"
+            />
+              <img
+                src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=fff"
+                alt="image search"
+                class="recherche__img"
+                width="20"
+                height="20"
+              />
+          </form>
       </div>
       <div class="navigation">
         <label for="chk-burger" class="navigation__bouton">
           <img
+            alt="chk-burger"
             src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=fff"
             width="64"
             height="64"
@@ -68,275 +66,300 @@
         </nav>
       </div>
 
-      <header id="accueil" class="accueil centre">
-        <h1 class="hero__titre">Des Jeux de Sociétés</h1>
-        <h2 class="hero__soustitre">(Par Zacharie Poliquin)</h2>
-        <h3 class="hero_description"> Ce site web, consacré au jeu de Sociétés, vous en apprendra plus sur de nouveaux jeux de société (Inspirés par d'autres) qui pourraient un jour changé la facette du monde comme Monopoly. </h3>
+      <header id="accueil" class="accueil">
+          <h1 class="hero__titre">Des Jeux de Société</h1>
+          <h2 class="hero__soustitre">Par Zacharie Poliquin</h2>
+          <h3 class="hero__description"> Ce site web, consacré aux jeux de société, vous en apprendra plus sur de nouveaux jeux de société (inspirés par d'autres) qui pourraient un jour changer l'image du monde comme le Monopoly. </h3>
       </header>
     </div>
-          <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Inscription -->
-    <div>
+        <div> 
       <section class="deux centre" id="inscription">
         <h2>Inscription sur le site</h2>
-         <form class="formulaire">
-        <div class="formulaire__div">
-      <fieldset>
-        <label class="formulaire__label" for="txt-nom">Prénom</label>
-        <input
-          class="formulaire__label"
-          id="txt-nom"
-          type="text"
-          placeholder="Entrez votre nom :"
-        />
-      </fieldset>
-      <fieldset>
-        <label class="formulaire__label" for="txt-prenom">Nom de famille</label>
-        <input
-          class="formulaire__label"
-          id="txt-prenom"
-          type="text"
-          placeholder="Entrez votre prénom :"
-        />
-      </fieldset>
-      <fieldset>
-        <label class="formulaire__label" for="txt-courriel">Courriel</label>
-        <input
-          class="formulaire__label"
-          id="txt-courriel"
-          type="email"
-          placeholder="Entrez votre courriel :"
-        />
-      </fieldset>
-        <fieldset>
-        <label class="formulaire__label" for="txt-courriel">Numéro de téléphone</label>
-        <input
-          class="formulaire__label"
-          id="txt-courriel"
-          type="email"
-          placeholder="Entrez votre numéro de téléphone :"
-        />
-      </fieldset>
+            <form class="formulaire">
+              <div class="formulaire__div">
 
-      <fieldset>
-        <label class="formulaire__label" for="txt-courriel">Mot de Passe</label>
-        <input
-          class="formulaire__label"
-          id="txt-courriel"
-          type="email"
-          placeholder="Entrez votre mot de Passe :"
-        />
-      </fieldset>
+                  <fieldset class="formulaire__fieldset">
+                    <label class="formulaire__label" for="txt-nom">Prénom :</label>
+                      <input
+                        class="formulaire__label"
+                        id="txt-nom"
+                        type="text"
+                        placeholder="Entrez votre prénom :"
+                      />
+                    </fieldset>
 
-      <fieldset>
-        <label class="formulaire__label" for="txt-courriel">Confirmation du Mot de Passe</label>
-        <input
-          class="formulaire__label"
-          id="txt-courriel"
-          type="email"
-          placeholder="Confirmez votre mot de Passe :"
-        />
-      </fieldset>
+                  <fieldset class="formulaire__fieldset">
+                    <label class="formulaire__label" for="txt-prenom">Nom de famille :</label>
+                      <input
+                        class="formulaire__label"
+                        id="txt-prenom"
+                        type="text"
+                        placeholder="Entrez votre nom de famille :"
+                        />
+                      </fieldset>
 
-      <fieldset>
-        <label class="formulaire__label" for="txt-courriel">Votre Jeu de Société préféré</label>
-        <input
-          class="formulaire__label"
-          id="txt-courriel"
-          type="email"
-          placeholder="Votre jeu de société préféré :"
-        />
-      </fieldset>
-      </div>
+                  <fieldset class="formulaire__fieldset">
+                    <label class="formulaire__label" for="txt-courriel">Courriel :</label>
+                      <input
+                        class="formulaire__label"
+                        id="txt-courriel"
+                        type="email"
+                        placeholder="Entrez votre courriel :"
+                      />
+                  </fieldset>
 
-      <fieldset>
-     <legend class="formulaire__label">Âge</legend>
-     <label class="formulaire__label">Étudiant (10$)<input type="radio" name="rad-abonnement"></label>
-     <label class="formulaire__label">Adulte (25$)<input type="radio" name="rad-abonnement"></label>
-     <label class="formulaire__label">Senior (15$)<input type="radio" name="rad-abonnement"></label>
-     </fieldset>
+                  <fieldset class="formulaire__fieldset">
+                    <label class="formulaire__label" for="numero-tel">Numéro de téléphone :</label>
+                      <input
+                        class="formulaire__label"
+                        id="numero-tel"
+                        type="tel" placeholder="Entrez votre numéro de téléphone :"
+                      />
+                    </fieldset>
 
-     <fieldset>
-     <legend class="formulaire__label">Quel est votre intérêt pour les Jeux de Société</legend>
-     <label class="formulaire__label">Aucun<input type="radio" name="rad-abonnement"></label>
-     <label class="formulaire__label">Peu<input type="radio" name="rad-abonnement"></label>
-     <label class="formulaire__label">Moyen<input type="radio" name="rad-abonnement"></label>
-     <label class="formulaire__label">Beaucoup<input type="radio" name="rad-abonnement"></label>
-     <label class="formulaire__label">Énorme<input type="radio" name="rad-abonnement"></label>
-     </fieldset>
+                  <fieldset class="formulaire__fieldset">
+                    <label class="formulaire__label" for="Mot-de-Passe">Mot de passe :</label>
+                      <input
+                        class="formulaire__label"
+                        id="Mot-de-Passe"
+                        type="password" placeholder="Entrez votre mot de passe :"
+                      />
+                    </fieldset>
 
-     <input class="formulaire__label" type="submit">
+                  <fieldset class="formulaire__fieldset">
+                    <label class="formulaire__label" for="Mot-de-Passe_Confirmé">Confirmation du mot de passe :</label>
+                      <input
+                        class="formulaire__label"
+                        id="Mot-de-Passe_Confirmé"
+                        type="password" placeholder="Confirmez votre mot de passe :"
+                      />
+                    </fieldset>
 
-    </form>
-      </section>
+                  <fieldset class="formulaire__fieldset">
+                    <label class ="formulaire__label">Choisissez votre pays :</label>
+                      <select class="formulaire__select" id="choixCouleur">
+                        <option value="">-- Sélectionnez un pays --</option>
+                        <option value="rouge">États-Unis</option>
+                        <option value="bleu">Pays-Bas</option>
+                        <option value="vert" selected>Canada</option>
+                        <option value="jaune">Chine</option>
+                        <option value="jaune">Japon</option>
+                        <option value="jaune">Allemagne</option>
+                        <option value="jaune">Royaume-Uni</option>
+                        <option value="jaune">Portugal</option>
+                        <option value="jaune">France</option>
+                        <option value="jaune">Inde</option>
+                        <option value="jaune">Brésil</option>
+                        <option value="jaune">Italie</option>
+                        <option value="jaune">Corée du Sud</option>
+                        <option value="jaune">Australie</option>
+                        <option value="jaune">Mexique</option>
+                        <option value="jaune">Suisse</option>
+                        <option value="jaune">Arabie Saoudite</option>
+                        <option value="jaune">Espagne</option>
+                        <option value="jaune">Indonésie</option>
+                        <option value="jaune">Turquie</option>
+                      </select>
+                  </fieldset>
+            
+                  <fieldset class="formulaire__fieldset">
+                    <label class="formulaire__label" for="Jeu-Prefere">Votre jeu de société préféré :</label>
+                    <input
+                      class="formulaire__label"
+                      id="Jeu-Prefere"
+                      type="text" placeholder="Votre jeu de société préféré :"
+                    />
+                  </fieldset>
+            
+                  <fieldset class="formulaire__fieldset">
+                    <legend>Âge</legend>
+                    <label class="formulaire__label">Étudiant (10 $)<input type="radio" name="rad-age"></label> <label class="formulaire__label">Adulte (25 $)<input type="radio" name="rad-age"></label>
+                    <label class="formulaire__label">Aîné (15 $)<input type="radio" name="rad-age"></label> <label class="formulaire__label">Autre (25 $)<input type="radio" name="rad-age"></label>
+                  </fieldset>
+
+                  <fieldset class="formulaire__fieldset">
+                    <legend>Quel est votre intérêt pour les jeux de société ?</legend> <label class="formulaire__label">Aucun<input type="radio" name="rad-interet"></label> <label class="formulaire__label">Peu<input type="radio" name="rad-interet"></label>
+                    <label class="formulaire__label">Moyen<input type="radio" name="rad-interet"></label>
+                    <label class="formulaire__label">Beaucoup<input type="radio" name="rad-interet"></label>
+                    <label class="formulaire__label">Énorme<input type="radio" name="rad-interet"></label>
+                  </fieldset>
+
+
+                  <div class="submit__div">
+                      <input class="formulaire__submit" type="submit">
+                  </div>
+              </div>
+            </form>
+        </section>
     </div>
-      <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Tableau -->
-    <div>
+        <div>
       <section class="trois centre" id="tableau"><h2>Tableau</h2>
-       <table>
-            <caption>Mes Jeux de Sociétés</caption>
-            <thead>
+        <table>
+            <caption>Mes jeux de société</caption> <thead>
               <tr class="titre__tr">
-                  <th>Nom</th>
-                  <th>Date de Sortie</th>
+                  <th>Jeu</th>
+                  <th>Date de sortie</th>
                   <th>Nb de joueurs</th>
                   <th>Description</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                  <th class="titre__th">Game Over</th>
-                  <th>5</th>
+                <tr>
+                  <th class="titre__th">Serpent et Échelle 71</th>
+                  <th>Juin 2015</th>
                   <th>2-4 joueurs</th>
-                  <th>6</th>
-              </tr>
+                  <th class = "description__tableau">Un simple jeu de "Serpents et Échelles" à 71 cases, car une case est en double. C'est mon tout premier jeu de société.</th> </tr>
+                <tr>
+                  <th class="titre__th">Alphabets et Dés</th>
+                  <th>Juillet 2017</th>
+                  <th>2 joueurs</th>
+                  <th class = "description__tableau">Chacun votre tour, vous dites un nombre de dés à lancer et vous devez faire le mot le plus long en moins de 60 s.</th> </tr>
+                <tr>
+                  <th class="titre__th">Mémo-Circulation</th>
+                  <th>Juillet 2017</th>
+                  <th>2 joueurs</th>
+                  <th class = "description__tableau">Vous mélangez les cartes, et un des 2 joueurs regarde les cartes en ordre pendant 20 s. Puis il dit le plus de cartes qu'il se souvient le plus rapidement possible.</th> </tr>
                 <tr>
                   <th class="titre__th">Ta Destinée</th>
-                  <th>5</th>
-                  <th>2-6 joueurs</th>
-                  <th>6</th>
-              </tr>
+                  <th>Août 2021</th> <th>2-6 joueurs</th>
+                  <th class = "description__tableau">Inspiré du jeu "Destin", c'est la même version, mais avec une nouvelle planche et de nouvelles cartes. N'oubliez pas de "regarder" derrière la planche, une surprise vous attend.</th> </tr>
                 <tr>
-                  <th class="titre__th">Monopoli</th>
-                    <th>5</th>
+                  <th class="titre__th">Monopoli Tricheur</th>
+                  <th>Juin 2022</th>
                   <th>2-6 joueurs</th>
-                  <th>6</th>
-              </tr>
+                  <th class = "description__tableau">Une version du jeu "Monopoly" plus rapide où les gens peuvent tricher et faire de la corruption.</th> </tr>
+                <tr>
+                  <th class="titre__th">Monopoli</th> <th>Décembre 2022</th>
+                  <th>2-6 joueurs</th>
+                  <th class = "description__tableau">Vous trouvez que le jeu "Monopoly" ne dure pas assez longtemps ? Voici la version encore plus longue avec 4 cases par quartier, ce qui rend les choses encore plus difficiles. Amusez-vous sur la nouvelle planche de jeu avec de nouvelles cartes comme l'"Hôpital" et des cartes "Prison".</th> </tr>
+                <tr>
+                  <th class="titre__th">Victory Royale</th>
+                  <th>Décembre 2023</th>
+                  <th>2-4 joueurs</th>
+                  <th class = "description__tableau">Un jeu de mémoire où l'on doit se rendre au milieu des cartes en trouvant une clé pour gagner. Inspiré du jeu "Fortnite", trouvez votre chemin à travers différentes cartes et peut-être que vous gagnerez par chance ou par mémoire.</th> </tr>
+                <tr>
+                  <th class="titre__th">Ordre 100</th>
+                  <th>Juillet 2024</th>
+                  <th>2-8 joueurs</th>
+                  <th class = "description__tableau">Dans ce jeu, vous devez "piger une" carte et la mettre dans l'ordre de suite des chiffres. Vous travaillez en équipe pour essayer de mettre les cartes en ordre sans connaître le chiffre de l'autre.</th> </tr>
                 <tr>
                   <th class="titre__th">Listopolis</th>
-                  <th>Décembre 2024</th>
+                  <th>Novembre 2024</th>
                   <th>2-6 joueurs</th>
-                  <th>6</th>
-              </tr>
-           </tbody>
+                  <th class = "description__tableau">Ce jeu, m'ayant pris énormément de temps, est le seul complètement original et unique. Vous devez aller magasiner des objets de votre quotidien et les trouver dans la ville, mais attention, vous n'êtes pas les seuls à essayer de trouver ces objets. "Dépêchez-vous" en allant au bon endroit et en faisant des cascades drôles et hilarantes.</th> </tr>
+            </tbody>
 
         </table>
       </section>
     </div>
-      <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Actualités -->
-    <div>
+        <div>
       <section class="quatre centre" id="nouvelles"><h2>Nouvelles</h2>
-       <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Article 1 -->
-       <article class="article">
+        <article class="article">
         <div class="article__div">
-          <h3> Saviez-vous que les jeux de sociétés polluaient 20 % de la planète ? </h3>
-          <p> Saviez-vous que derrière nos soirées conviviales se cache un impact environnemental méconnu ?
-              Entre production intensive, matériaux polluants et transports mondialisés, le monde du jeu n'est pas aussi innocent qu'il en a l'air.
-              Plongez dans l'envers du décor et découvrez comment nos boîtes colorées influencent réellement la planète… et comment l'industrie peut changer les règles du jeu.</p>
+          <h3> Saviez-vous que les jeux de société polluaient 20 % de la planète ? </h3> <p> Saviez-vous que derrière nos soirées conviviales se cache un impact environnemental méconnu ?
+            Entre production intensive, matériaux polluants et transports mondialisés, le monde du jeu n'est pas aussi innocent qu'il en a l'air.
+            Plongez dans l'envers du décor et découvrez comment nos boîtes colorées influencent réellement la planète… et comment l'industrie peut changer les règles du jeu.</p>
         </div>
           <figure class="article__figure">
-          <img class="article__img" src="images/deppotoir__jeu.jpg" alt="">
-          <figcaption class="article__figcaption">Photo d'un depotoir de jeux de sociétés</figcaption>
-        </figure>
-      </article>
-      <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Article 2 -->
-      <article class="article">
+          <img class="article__img" src="images/deppotoir_jeu.jpg" alt="">
+          <figcaption class="article__figcaption">Photo d'un "dépotoir" de jeux de société</figcaption> </figure>
+        </article>
+        <article class="article">
         <div class="article__div">
-          <h3> Nouveautés jeu par la compagnie «Jeux de Sociétés» </h3>
-          <p> La compagnie « Jeux de Sociétés » dévoile une nouvelle vague de titres ambitieux qui repoussent les limites de la créativité.
-             Entre mécaniques innovantes, univers immersifs et matériel repensé, ces jeux visent autant les familles que les passionnés.
-              L'éditeur mise également sur des matériaux plus durables afin de réduire son empreinte écologique.
-               Ces nouveautés témoignent d'une volonté de moderniser le secteur tout en respectant les attentes d'un public toujours plus exigeant.
-                Une sélection qui promet de redéfinir les soirées ludiques à venir. </p>
+          <h3> Nouveautés de jeux par la compagnie « Jeux de Société » </h3> <p> La compagnie « Jeux de Société » dévoile une nouvelle vague de titres ambitieux qui repoussent les limites de la créativité.
+            Entre mécaniques innovantes, univers immersifs et matériel repensé, ces jeux visent autant les familles que les passionnés.
+            L'éditeur mise également sur des matériaux plus durables afin de réduire son empreinte écologique.
+              Ces nouveautés témoignent d'une volonté de moderniser le secteur tout en respectant les attentes d'un public toujours plus exigeant.
+              Une sélection qui promet de redéfinir les soirées ludiques à venir. </p>
         </div>
         <figure class="article__figure">
           <img class="article__img" src="images/nouveau_jeu_de_societe.png"  alt="">
-          <figcaption class="article__figcaption">Quest for the Lost Artfifact par la Compagnie "Jeux de Sociétés"</figcaption>
-        </figure></article>
-       <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Article 3 -->
-       <article class="article">
+          <figcaption class="article__figcaption">"Quest for the Lost Artifact" par la compagnie « Jeux de Société »</figcaption> </figure></article>
+        <article class="article">
         <div class="article__div">
-          <h3>Top 10 des jeux de sociétés le plus joués au monde</h3>
-          <p> Cet article présente un classement mondial des jeux de société ayant marqué les joueurs par leur popularité et leur longévité.
-             Du classique intemporel aux succès modernes, chaque titre se distingue par son accessibilité et sa capacité à réunir les gens.
-              Certains jeux traversent les générations sans perdre en charme, preuve de leur solidité ludique.
-               Le classement révèle aussi l'influence croissante de nouveaux genres, tels que les jeux coopératifs ou asymétriques.
-                Un panorama fascinant de ce qui fait vibrer les tables de jeu à l'échelle planétaire. </p>
+          <h3>Top 10 des jeux de société les plus joués au monde</h3> <p> Cet article présente un classement mondial des jeux de société ayant marqué les joueurs par leur popularité et leur longévité.
+            Du classique intemporel aux succès modernes, chaque titre se distingue par son accessibilité et sa capacité à réunir les gens.
+            Certains jeux traversent les générations sans perdre de leur charme, preuve de leur solidité ludique.
+              Le classement révèle aussi l'influence croissante de nouveaux genres, tels que les jeux coopératifs ou asymétriques.
+              Un panorama fascinant de ce qui fait vibrer les tables de jeu à l'échelle planétaire. </p>
         </div>
-         <figure class="article__figure">
+          <figure class="article__figure">
           <img class="article__img" src="images/Top_10_jeu_societe.png" alt="">
-          <figcaption class="article__figcaption">Top 10 des meilleurs jeux de sociétés dans le monde</figcaption>
-        </figure>
-       </article>
-      <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Article 4 -->
-     <article class="article">
+          <figcaption class="article__figcaption">Top 10 des meilleurs jeux de société dans le monde</figcaption> </figure>
+        </article>
+        <article class="article">
         <div class="article__div">
-          <h3># Angela n'a jamais joué à un jeu de société (Drama Total)</h3>
-          <p>Quand Angela avoue n'avoir jamais touché un seul jeu de société, ses amis restent figés comme si elle venait d'annoncer qu'elle ne savait pas ce qu'était un dé à six faces.
-             Depuis, ils se sont donné pour mission de lui organiser un « stage intensif ludique », dans lequel elle devra survivre à un Monopoly de six heures, un Uno chaotique et une initiation express au Jenga sous haute tension.
-             Bien sûr, avant même de commencer, ils lui ont fait passer un test psycho-ludique pour vérifier si elle connaissait au moins la différence entre une carte Chance et une carte Action.
-             Quand elle a demandé si le Cluedo était « un truc pour apprendre à bricoler », ils ont compris que la situation était plus grave que prévu.
-             Certains ont même proposé de lui offrir une formation accélérée en « lecture de règles », un art que peu maîtrisent vraiment.
-             Angela, de son côté, a accepté l'aventure avec courage, même si elle pense encore que « meeple » est le nom d'un animal mignon.
-             Il paraît même qu'elle s'entraîne secrètement à lancer des dés en douce, histoire d'éviter un scandale lors de son premier lancer officiel.</p>
-<p> Apprenez en plus dans cet article !</p>
-        </div>
+          <h3> Angela n'a jamais joué à un jeu de société (Drama Total) </h3> <p>Quand Angela avoue n'avoir jamais touché un seul jeu de société, ses amis restent figés comme si elle venait d'annoncer qu'elle ne savait pas ce qu'était un dé à six faces.
+            Depuis, ils se sont donné pour mission de lui organiser un « stage intensif ludique », dans lequel elle devra survivre à un "Monopoly" de six heures, un "Uno" chaotique et une initiation express au "Jenga" sous haute tension.
+            Bien sûr, avant même de commencer, ils lui ont fait passer un test psycho-ludique pour vérifier si elle connaissait au moins la différence entre une carte "Chance" et une carte "Action".
+            Quand elle a demandé si le "Cluedo" était « un truc pour apprendre à bricoler », ils ont compris que la situation était plus grave que prévu.
+            Certains ont même proposé de lui offrir une formation accélérée en « lecture de règles », un art que peu maîtrisent vraiment.
+            Angela, de son côté, a accepté l'aventure avec courage, même si elle pense encore que « meeple » est le nom d'un animal mignon.
+            Il paraît même qu'elle s'entraîne secrètement à lancer des dés en douce, histoire d'éviter un scandale lors de son premier lancer officiel.</p>
+        <p> Apprenez-en plus dans cet article !</p> </div>
         <figure class="article__figure">
           <img class="article__img" src="images/surprise.jpg" alt="">
-          <figcaption class="article__figcaption">Surprise Générale</figcaption>
-        </figure></article>
-    </section>
+          <figcaption class="article__figcaption">Surprise générale</figcaption> </figure></article>
+      </section>
     </div>
-      <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Galerie -->
-    <div>
+        <div>
       <section class="cinq centre" id="galerie">
           <h2>Galerie d'images</h2>
           <figure class="galerie">
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
-  
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
-   
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
+                <figure class="galerie__figure">
+                  <img src="images/101.png" alt="Image du jeu 101" class="galerie__img"> </figure>
+      
+                <figure class="galerie__figure">
+                  <img src="images/Game_Over_(Fortnite).png" alt="Écran Game Over inspiré de Fortnite" class="galerie__img">
+                </figure>
+      
+                <figure class="galerie__figure">
+                  <img src="images/Cartes_(Ta_Destinée).png" alt="Cartes du jeu Ta Destinée" class="galerie__img">
+                </figure>
 
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
+                <figure class="galerie__figure">
+                  <img src="images/Ta_Destinée.png" alt="Plateau de jeu Ta Destinée" class="galerie__img">
+                </figure>
 
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
+                <figure class="galerie__figure">
+                  <img src="images/Figurines.png" alt="Figurines de jeu de société" class="galerie__img">
+                </figure>
 
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
+                <figure class="galerie__figure">
+                  <img src="images/Serpent_et_Échelle_(71).png" alt="Plateau de Serpent et Échelle 71" class="galerie__img">
+                </figure>
 
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
-  
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
+                <figure class="galerie__figure">
+                  <img src="images/Carte_Faux-Monopoly.png" alt="Carte du jeu Faux-Monopoly" class="galerie__img">
+                </figure>
+      
+                <figure class="galerie__figure">
+                  <img src="images/Faux_Monopoli.png" alt="Plateau de jeu Faux Monopoly" class="galerie__img">
+                </figure>
 
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
+                <figure class="galerie__figure">
+                  <img src="images/Monopoly_Tricheur.png" alt="Boîte de Monopoly Tricheur" class="galerie__img">
+                </figure>
 
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
+                <figure class="galerie__figure">
+                  <img src="images/Circulation_et_Mémoire.png" alt="Cartes du jeu Mémo-Circulation" class="galerie__img">
+                </figure>
 
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
+                <figure class="galerie__figure">
+                  <img src="images/Listopolis.png" alt="Plateau de jeu Listopolis" class="galerie__img">
+                </figure>
 
-               <figure class="galerie__figure">
-                  <img src="images/chat.png" alt="" class="galerie__img">
-               </figure>
+                <figure class="galerie__figure">
+                  <img src="images/Dés_Alphabets.png" alt="Dés et lettres du jeu Alphabets et Dés" class="galerie__img">
+                </figure>
           </figure>
       </section>
     </div>
-      <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Video -->
-    <div>
+        <div>
       <section class="six centre" id="video">
           <h2>Vidéo</h2>
           <figure class="video">
-            <iframe 
+            <iframe
             src="https://www.youtube.com/embed/RXW6G0tH_Qo?si=8ggDswEb3p2b9IRz"
             title="YouTube video player"
             frameborder="0"
@@ -354,76 +377,45 @@
           </figure>
       </section>
     </div>
-      <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// Coordonées -->
-    <div>
-      <footer id="pied" class="pied centre">
-        <h2>Coordonées et Adresse</h2>
-         <div class = "bas">
+        <div>
+      <footer id="pied" class="pied">
+        <h2>Coordonnées et adresse</h2> <div class = "bas">
             <div class = "pied__1">
                <section class = "pied__section">
-                 <h4>Adresse Collège de Maisonneuve</h4>
-                 <h5>
-                    <ul>
-                        <li> Ouvert depuis les 18 mars 2025 </li>
-                        <li> 67 R. Des Jeux, Montréal, QC H7O 2L0 </li>
+                 <h4>Informations importantes</h4> <ul>
+                        <li> Ouvert depuis le 18 mars 2025 </li> <li> 67 R. Des Jeux, Montréal, QC H7O 2L0 </li>
                         <li> Téléphone : 514-123-4567 </li>
                         <li> Nombre d'employés : 70 </li>
-                        <li> <a href="https://github.com/ZachariePoliquin" target="_blank" >Depot github</a></li>
-                    </ul>
-                 </h5>
+                        <li> Propriétaire : Zacharie Poliquin </li>
+                        <li> <a href="https://github.com/ZachariePoliquin" target="_blank" >Dépôt GitHub</a></li> </ul>
                </section>
 
                <section class = "pied__section">
-                 <h4>Services administratif</h4>
-                 <h5>
-                    <ul>
+                 <h4>Services administratifs</h4> <ul>
                         <li> Accueil et information </li>
                         <li> Inscription et admission </li>
-                        <li> Nourritures </li>
-                        <li> Location de Jeux </li>
-                        <li> Party et Fête </li>
-                        <li> Bar</li>
-                        <li> Évenements </li>
-                    </ul>
-                 </h5>
+                        <li> Restauration </li> <li> Location de jeux </li> <li> Organisation de fêtes et d'événements </li> <li> Bar</li>
+                        <li> Événements </li> </ul>
                </section>
                <section class = "pied__section">
-                 <h4 class="h4__image">Des Jeux de Sociétés</h4>
-                 <figure class="pied__figure">
-                    <img src="images/qg__jeu__de__societe.jpg" alt="jardin maisonneuve"> 
-                    <figcaption> <h5> QG du batiment prinicpal de notre entreprise </h5> </figcaption>
-                 </figure>
+                 <h4 class="h4__image">Des jeux de société</h4> <figure class="pied__figure">
+                    <img src="images/qg__jeu__de__societe.jpg" alt="Quartier général du bâtiment principal de notre entreprise"> <figcaption> QG du bâtiment principal de notre entreprise </figcaption> </figure>
                 
                </section>
             </div>
 
             <div class="pied__2">
                <section class="svgbox__icones__principal">
-                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=github&color=000" alt="github" width="24px" height="24px">
-                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=facebook&color=0000DA" alt="facebook" width="24px" height="24px">
-                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=FF0E00" alt="stackoverflow" width="24px" height="24px">
-                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0095BD" alt="linkedin" width="24px" height="24px">
-                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=messenger&color=0000DA" alt="messenger" width="24px" height="24px">
-                     <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=discord&color=4F00A0" alt="discord" width="24px" height="24px">
-               </section>
+                      <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=github&color=000" alt="icône GitHub" width="24" height="24">
+                      <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=facebook&color=0000DA" alt="icône Facebook" width="24" height="24">
+                      <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=FF0E00" alt="icône Stack Overflow" width="24" height="24">
+                      <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=linkedin&color=0095BD" alt="icône LinkedIn" width="24" height="24">
+                      <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=messenger&color=0000DA" alt="icône Messenger" width="24" height="24">
+                      <img class="svgbox__icones" src="https://s2.svgbox.net/social.svg?ic=discord&color=4F00A0" alt="icône Discord" width="24" height="24">
+                </section>
             </div>
-         </div>
+          </div>
       </footer>
     </div>
   </body>
 </html>
-
-<!-- body div {
-    backround-color : red;
-}
-body > div {
-    background-color : red;
-}
-
-<body>
-  <div>
-    <div>
-      <div></div>
-    </div>
-  </div>
-</body> -->

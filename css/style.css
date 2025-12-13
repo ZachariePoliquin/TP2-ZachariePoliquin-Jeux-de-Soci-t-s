@@ -23,6 +23,14 @@ footer {
   padding: 30px 20px;
 }
 
+.accueil {
+
+  max-width: 1083px;
+  margin: 0  auto 0 0;
+  background: linear-gradient(180deg, #d4a026ab 80%, #fff 100%), (180deg, rgba(0, 0, 0, 0) 50%, #965dac 100%);
+  padding: 50px 0px;
+}
+
 /* 
 .un__centre{
     background-color: aquamarine;
@@ -56,25 +64,34 @@ h3 {
 
 h1 {
   font-size: 6rem;
-  text-align: center;
   font-family: "Indie Flower", cursive;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   font-family: "Indie Flower", cursive;
+}
+
+.description__tableau {
+  font-size: clamp(0.7rem,2vw,1.4rem);
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////// Section de la Page */
 
 body > div:nth-of-type(1) {
   background: 
-    linear-gradient(to bottom,
+       linear-gradient(to top,
+      rgba(0, 0, 0, 0) 50%,
+      #ac7c5d 100%
+    ), linear-gradient(to bottom,
       rgba(0, 0, 0, 0) 80%,
-      rgba(255, 255, 255, 1) 100%
+      rgb(255, 255, 255) 100%
+    ), linear-gradient(to left,
+      transparent 80%,
+      rgba(64, 160, 79, 0.459) 100%
     ),
-    url("../images/plein-jeu.webp");
+    url("../images/hero_img.png");
   
   background-size: cover;
   background-position: center;
@@ -86,8 +103,10 @@ background:
     linear-gradient(to top,
       rgba(0, 0, 0, 0) 80%,
       rgb(255, 255, 255) 100%
-    ),
-    url("../images/bibliotheque-de-jeu.avif");
+    ),  linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 80%,
+      rgb(255, 255, 255) 100%
+    ), url("../images/bibliotheque-de-jeu.avif");
 
   background-size: cover;
   background-position: center;
@@ -96,27 +115,35 @@ background:
 }
 
 body>div:nth-of-type(3) {
-  background-color: rgb(179, 155, 37);
+    background: 
+       linear-gradient(to top,
+      rgba(0, 0, 0, 0) 80%,
+      #ffffff 100%
+    ), linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 80%,
+      rgb(255, 255, 255) 100%
+    ), url("../images/plein-jeu.webp");
 }
 
 body>div:nth-of-type(4) {
-  background-color: rgb(89, 80, 216);
+  background:
+    linear-gradient(to top,
+      rgba(0, 0, 0, 0) 78%,
+      rgb(255, 255, 255) 100%
+    );
+  background-color: rgb(151, 130, 72);
 }
 
 body>div:nth-of-type(5) {
-  background-color: rgb(178, 32, 32);
+  background-color: rgb(188, 118, 33);
 }
 
 body>div:nth-of-type(6) {
-  background-color: rgb(123, 0, 255);
+  background-color: rgb(43, 41, 46);
 }
 
 body>div:nth-of-type(7) {
   background-color: rgba(137, 106, 68, 0.879);
-}
-
-img {
-
 }
 
 figure {
@@ -126,27 +153,39 @@ figure {
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////// La division Hero */
 
-.hero {
-
-}
-
 .hero>.centre {
   background-color: #5c5ce100;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 100%;
+  line-height: 100px;
+}
+
+.hero__titre, .hero__soustitre, .hero__description {
+  background: linear-gradient(to left,
+      transparent 0%,
+      rgba(161, 124, 45, 0.594) 100%
+    );
+  padding: 20px;
 }
 
 .hero__titre {
-  color: #313131;
-  font-size: 4rem;
+  color: #ffffff;
+  font-size: clamp(4rem, 10vw, 7rem); 
 }
 
 .hero__soustitre {
-  color: #313131;
-  font-size: 2.5rem;
-  text-align: center;
+  text-align: left;
+  color: #ffffff;
+  font-size: clamp(2rem, 8vw, 5rem);
 }
 
 .hero__description {
   font-family: "Chelsea Market", cursive;
+  color: white;
+  font-size: clamp(3px, 6vw, 1.3rem);
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////// CHECK-BURGER */
@@ -199,13 +238,52 @@ figure {
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////Inscription */
 
-fieldset {
+.formulaire__fieldset {
   border-radius: 10px;
+  background-color: #b38c32b3;
+  margin:80px 20px ;
+  border: 2px solid rgba(255, 255, 255, 0.717);
+  flex-grow: 1;
+  flex-basis: 292px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+legend {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3rem;
 }
 
 .formulaire__label {
   font-family: "Chelsea Market", cursive;
 }
+
+.formulaire__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.submit__div {
+    margin: 40px auto 20px auto; 
+    text-align: center;
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    }
+.formulaire__submit {
+    max-width: 400px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #b38c32;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////Tableau */
 table {
@@ -215,16 +293,8 @@ table {
   margin: 30px auto;
 }
 
-/* .titre__th {
-  background-color: rgb(204, 190, 121);
-} */
-
 .titre__tr {
   background-color: rgb(224, 204, 101);
-}
-
-label {
-  padding-left: 30px;
 }
 
 tbody tr:nth-of-type(odd) {
@@ -234,7 +304,7 @@ tbody tr:nth-of-type(odd) {
 td,
 th {
   border: 2px solid rgb(0, 0, 0);
-  font-size: 2rem;
+  font-size: clamp(1rem,2vw,2rem);
   padding: 5px;
 }
 
@@ -249,52 +319,12 @@ caption {
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////Article1 */
-
-/*
-.centre_total {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.centre_flexbox {
-display: flex;
- flex-grow: 1;
- flex-shrink: 0;
- flex-basis: 200px;
- flex-wrap: wrap;
-}
-
-
-.principal__figure img {
-   display: block;
-   width: 100%;
-}
-
-h2 {
-   margin-bottom: 35px;
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   font-size: 1.9rem;
-   color: rgb(13, 90, 120);
-}
-
-p {
-  line-height: 25px;
-  margin-bottom: 35px;
-}
-
-figcaption {
-   background-color: rgba(255, 255, 255, 0.537);
-   text-align: center;
-   padding: 5px;
-   font-style: italic;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 /* /////////////////////Conteneur Principal */
 .article {
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
-  background-color: rgb(169, 146, 207);
+  background-color: rgb(182, 163, 55);
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 20px;
@@ -305,7 +335,7 @@ figcaption {
 flex-grow: 2 ;
 flex-shrink: 0;
 flex-basis: 400px;
-font-size: 2rem;
+font-size: clamp(1rem, 3vw, 1.7rem)
 
 }
 
@@ -314,18 +344,6 @@ font-size: 2rem;
 flex-grow: 1 ;
 flex-shrink: 0;
 flex-basis: 400px;
-
-}
-
-
-
-
-.article__div h2 {
-
-}
-
-.article__div p {
-
 }
 
 .article__img {
@@ -349,37 +367,47 @@ order: -1;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   gap: 10px;
 }
 
 .galerie__figure {
-   flex-grow: 0 ;
+   flex-grow: 1 ;
    flex-shrink: 0 ;
-   flex-basis: 300px;
-   transform: rotate(10deg);
+   flex-basis: 325px;
+   margin: 13px;
+   padding: 8px;
 }
 
 .galerie__img {
   display: block;
   width: 100%;
-  margin: 0;
+  margin: 0px;
   padding: 0;
+  border-radius: 20px;
+  transition: transform 1s;
 }
 
-.galerie__figaption {
-
+.galerie__img:hover {
+  transform: scale(1.2);
 }
 
-.galerie__figure:nth-of-type(odd){
-  transform: rotate(-10deg);
+.galerie__img:active {
+  transform: scale(3);
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Video */
 
 .video iframe {
-  display: inline-block;
-  margin: 20px;
+    width: 419px;
+    height: 237px;
+    margin: 30px auto; 
+    display: block;
+    flex-wrap: wrap; 
+    border-radius: 20px;
+    transition: transform 2s;
+}
 
+.video iframe:hover {
+  transform: scale(2);
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Pied de Page */
@@ -399,11 +427,19 @@ order: -1;
   width: 100%;
 }
 
+.pied {
+max-width: 1400px;
+margin: 0 auto;
+background-color: #ffffffa9;
+padding: 30px 20px;
+min-height: 50vh;
+}
+
 .pied__section {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 200px;
-  color: rgb(120, 120, 120);
+  color: #4f4c4c;
   padding: 20px;
   margin-left: -13px;
   min-height: 20vh;
@@ -427,7 +463,7 @@ ul {
   margin: 0;
   padding: 0;
   font-size: 2.4rem;
-  color: #313131;
+  color: #4f4c4c;
 }
 
 li {
