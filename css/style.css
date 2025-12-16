@@ -423,6 +423,10 @@ order: -1;
   transform: scale(1.2);
 }
 
+.galerie__img:hover {
+  transform: scale(1.2);
+}
+
 .galerie__img:active {
   transform: scale(3);
 }
