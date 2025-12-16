@@ -3,6 +3,16 @@
   font-family: "Chelsea Market", cursive;
 }
 
+@font-face {
+  font-family: "DynaPuff-Regular.ttf";
+  src: url("../fonts/dynapuff/fonts/fonts/otf/DynaPuff-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Montserrat-Light.otf";
+  src: url("../fonts/montserrat/Montserrat-Light.otf") format("opentype");
+}
+
 html {}
 
 body {
@@ -143,6 +153,10 @@ body>div:nth-of-type(6) {
 }
 
 body>div:nth-of-type(7) {
+  background-color: rgba(228, 195, 10, 0.879);
+}
+
+body>div:nth-of-type(8) {
   background-color: rgba(137, 106, 68, 0.879);
 }
 
@@ -195,6 +209,7 @@ figure {
   top: 20px;
   right: 20px;
   text-align: right;
+  z-index: 1;
 }
 
 .navigation__menu {
@@ -229,6 +244,26 @@ figure {
 #chk-burger {
   display: none;
 }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////// Maison Bouton */
+
+.maison {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  z-index: 1000;
+}
+
+.navigation__bouton img {
+    transition: filter 1s;
+}
+
+.maison:hover .navigation__bouton img {
+    filter: invert(50%) sepia(1) saturate(1000%) hue-rotate(340deg);
+}
+
+
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////// Titre et fond */
 
@@ -360,8 +395,6 @@ flex-basis: 400px;
 order: -1;
 } 
 
-
-
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Galerie */
 .galerie{
    display: flex;
@@ -408,6 +441,100 @@ order: -1;
 
 .video iframe:hover {
   transform: scale(2);
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// Recette (EpreuveFinal) */
+
+.global h1 {
+  font-family: "DynaPuff-Regular.ttf";
+  font-size: clamp(3rem,6vw,5rem);
+}
+.global h2 {
+  font-family: "DynaPuff-Regular.ttf";
+  font-size: 1.7rem;
+  text-align: left;
+}
+.global h3 {
+  font-family: "DynaPuff-Regular.ttf";
+  font-size: 0.9rem;
+}
+.global li {
+  font-family: "Montserrat-Light.otf";
+}
+.global strong {
+  font-family: "Montserrat-Light.otf";
+}
+.global figcaption {
+  font-family: "Montserrat-Light.otf";
+  font-size: 1.5rem;
+}
+
+.recette {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   border-bottom: 10px dotted rgb(163, 157, 94);
+   margin-bottom: 24px;
+}
+
+.recette__div {
+   flex-grow: 1 ;
+   flex-shrink: 0 ;
+   flex-basis: 325px;
+   margin: 13px;
+   padding: 8px;
+}
+
+.recette__figure {
+   flex-grow: 1 ;
+   flex-shrink: 0 ;
+   flex-basis: 325px;
+   padding: 10px;
+   border: 2px solid green;
+   border-radius: 10px;
+   transition: transform 1s;
+}
+
+.recette__image {
+   flex-grow: 1 ;
+   flex-shrink: 0 ;
+   flex-basis: 288px;
+   margin: 13px;
+   padding: 8px;
+}
+
+.recette__figcaption {
+  background-color: rgb(193, 187, 129);
+  padding: 10px;
+}
+
+.recette__img {
+  display: block;
+  width: 100%;
+  margin: 0px;
+}
+
+ol {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.recette:nth-of-type(even) .recette__figure {
+  transform: rotate(5deg);
+}
+.recette:nth-of-type(odd) .recette__figure {
+  transform: rotate(-5deg);
+}
+.recette .recette__figure:hover {
+  transform: rotate(0deg);
+}
+
+.recette:nth-of-type(even) .recette__image {
+    order: 1; 
+}
+
+.recette:nth-of-type(odd) .recette__image {
+    order: -1; 
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Pied de Page */
